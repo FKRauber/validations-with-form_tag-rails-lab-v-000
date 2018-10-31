@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   get '/posts/new', to: 'posts#new', as: 'new_post'
   post '/posts', to: 'posts#create'
   get '/posts/:id', to: 'posts#show', as: 'post'
+  get '/posts/:id/edit', to: 'posts#edit', as: 'edit_post'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
