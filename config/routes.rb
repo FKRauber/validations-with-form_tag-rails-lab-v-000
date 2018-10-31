@@ -9,6 +9,8 @@ Rails.application.routes.draw do
   patch '/authors/:id', to: 'authors#update'
 
   get '/posts/new', to: 'posts#new', as: 'new_post'
+  post '/posts', to: 'posts#create'
+  get '/posts/:id', to: 'posts#show', as: 'post'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
