@@ -21,4 +21,10 @@
       <%= text_field_tag "title", "@post.title" %>
     </div>
 
+  <% if @post.erros[:category].empty? %>
+    <div class="field">
+  <% else %>
+    <div class="field_with_errors">
+  <% end %>
+
 <% end %>
