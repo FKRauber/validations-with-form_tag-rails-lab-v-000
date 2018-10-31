@@ -28,5 +28,6 @@
   <% end %>
       <%= label_tag "category", "Category" %>
       <p>Must be either "Fiction" or "Non-Fiction."</p>
+      <%= text_field_tag "category", @post.category %>
 
 <% end %>
