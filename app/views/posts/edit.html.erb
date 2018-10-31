@@ -9,7 +9,12 @@
           <li><%= message %></li>
         <% end %>
       </ul>
+    </div>
   <% end %>
 
-  
+  <% if @post.errors[:title].empty? %>
+    <div class="field">
+  <% end %>
+
+
 <% end %>
